@@ -17,7 +17,7 @@ class Muiltple_Linear_Regression:
         # To make a string which follows he mathematical equation of the Muiltple Linear Regression Model Trained on X and y
         for i in range(1, len(self.B)):
             self.equ += f" + {self.B[i]:.3f}X_{i}"
-            
+
 
     # The predict function predicts the values according to the data trained by the fir function
     def predict(self, X_test) -> np.ndarray:
@@ -28,3 +28,5 @@ class Muiltple_Linear_Regression:
     # The getEquation functions gets the Muiltple Linear equation for the regression on the data X and y
     def getEquation(self) -> str:
         return self.equ
+    
+    
